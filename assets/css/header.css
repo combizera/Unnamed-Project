@@ -1,0 +1,158 @@
+.header__nav {
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  position: absolute;
+}
+
+.logo__img {
+  width: 80%;
+  margin: 10px;
+}
+
+.header__list {
+  display: inline-flex;
+  padding-right: 5%;
+}
+
+.header__txt {
+  display: none;
+}
+
+.header__item {
+  margin-left: 2vw;
+}
+
+.header__item-img {
+  width: 100%;
+  max-block-size: 60px;
+  transition: 300ms;
+}
+
+.header__item-img:hover {
+  transform: scale(1.13);
+  transition: 300ms;
+}
+
+#btn__mobile {
+  display: none;
+  color: #e1ae00;
+}
+
+/* Celulares */
+
+@media (max-width: 800px) {
+  .header__nav {
+    background-color: #596800;
+    height: 7.5vh;
+    position: fixed;
+    z-index: 2000;
+  }
+  .div__wp {
+    overflow: unset;
+  }
+
+  .logo {
+    margin-top: 1vw;
+    transform: translateX(-10%) scale(0.8);
+  }
+
+  .header {
+    color: #e1ae00;
+    font-weight: 100;
+  }
+
+  #btn_mobile {
+    display: block;
+  }
+
+  .header__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    width: 100%;
+    top: 7vh;
+    right: 0px;
+    background-color: #596800;
+    height: 10px;
+    transition: 0.6s;
+    z-index: 1000;
+    font-size: 28px;
+    visibility: hidden;
+    overflow-y: hidden;
+    align-items: center;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+  }
+
+  .header__txt {
+    display: block;
+  }
+
+  #header__nav.active .header__list {
+    visibility: visible;
+    height: calc(46vh - 50px);
+    overflow-y: auto;
+  }
+
+  .header__list a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+    font-weight: 700;
+  }
+
+  #btn__mobile {
+    padding: 0.5rem 1rem;
+    display: flex;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  .hamburguer {
+    display: block;
+    border-top: 2px solid;
+    width: 20px;
+    margin-left: 5px;
+  }
+
+  .hamburguer::after,
+  .hamburguer::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+
+  #header__nav.active .hamburguer {
+    border-top-color: transparent;
+  }
+
+  #header__nav.active .hamburguer::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+
+  #header__nav.active .hamburguer::before {
+    transform: rotate(135deg);
+  }
+
+  .header__item-img {
+    display: none;
+  }
+
+  .blur {
+    backdrop-filter: blur(0px);
+  }
+}

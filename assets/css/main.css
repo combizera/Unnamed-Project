@@ -1,0 +1,289 @@
+.bg1__container {
+  width: 100%;
+  height: 50vw;
+  background-image: url("./../img/bg1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.logoMain {
+  width: 95%;
+  height: 50vw;
+  margin: 0 auto;
+  background-image: url("./../img/brLogoMain.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  position: relative;
+  top: -2vw;
+}
+
+.div__wp {
+  width: 100%;
+  height: 12vw;
+  background-image: url("./../img/divWhitepaper.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40%;
+  position: absolute;
+  top: 45vw;
+}
+
+.bg2__container {
+  width: 100%;
+  height: 50vw;
+  background-image: url("./../img/bg2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.wood__book {
+  width: 100%;
+  height: 60vw;
+  margin: 0 auto;
+  background-image: url("./../img/plate.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 45%;
+  position: relative;
+}
+
+.book {
+  width: 90%;
+  height: 20vw;
+  margin: 0 auto;
+  background-image: url("./../img/book.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25%;
+  position: relative;
+  top: -42.5vw;
+  z-index: 10;
+  left: 2vw;
+}
+
+.bg3__container {
+  width: 100%;
+  height: 60vw;
+  background-image: url("./../img/bg3.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  /*Por algum motivo, qndo o position estava absolute o footer simplesmente bugava 100% dps temos que corrigir isso*/
+}
+
+.plate__trailer {
+  width: 50%;
+  height: 40vw;
+  margin-left: 2vw;
+  background-image: url("./../img/plateTrailer.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  position: relative;
+  top: -100;
+}
+
+.div__wood1 {
+  width: 100%;
+  height: 5vw;
+  background-image: url("./../img/div.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  position: absolute;
+  top: 98vw;
+  z-index: 10;
+}
+
+.div__wood2 {
+  width: 100%;
+  height: 5vw;
+  background-image: url("./../img/div.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  position: absolute;
+  top: 158vw;
+  z-index: 10;
+}
+
+.txt__trailer {
+  width: 22%;
+  height: 20vw;
+  margin: 0 auto;
+  background-image: url("./../img/txtPlateTrailer.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  position: absolute;
+  top: 95vw;
+  left: 16vw;
+}
+
+.bg4__container {
+  width: 100%;
+  height: 80vw;
+  background-image: url("./../img/bg2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.txt__rm {
+  width: 100%;
+  height: 12vw;
+  background-image: url("./../img/roadmap.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40%;
+  position: absolute;
+  top: 154vw;
+  z-index: 10;
+}
+.folha_esq {
+  width: 20%;
+  height: 32vw;
+  background-image: url("./../img/folhaDivisao2.png");
+  background-repeat: no-repeat;
+  background-size: 10vw;
+  position: absolute;
+  top: 152vw;
+  z-index: 10;
+}
+.folha_dir {
+  width: 20%;
+  height: 20vw;
+  background-image: url("./../img/folhaDivisao1.png");
+  background-repeat: no-repeat;
+  background-size: 10vw;
+  background-position: right;
+  position: absolute;
+  top: 87vw;
+  left: 78.9vw;
+  z-index: 10;
+}
+
+.roadmap {
+  width: 100%;
+  height: 50vw;
+  background-image: url("./../img/txtRoadmap.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+  position: absolute;
+  top: 165vw;
+  z-index: 12;
+}
+@media (max-width: 800px) {
+  .bg1__container {
+    width: 100%;
+    height: 150vw;
+  }
+
+  .logoMain {
+    background-size: 110%;
+    height: 160vw;
+    top: -10vw;
+  }
+
+  .div__wp {
+    width: 100%;
+    height: 20vw;
+    top: 140vw;
+    background-size: 70%;
+  }
+
+  .bg2__container {
+    width: 100%;
+    height: 150vw;
+  }
+
+  .book {
+    width: 80%;
+    height: 55vw;
+    left: 4vh;
+    top: -112.5vw;
+    background-size: 60%;
+  }
+
+  .wood__book {
+    width: 100%;
+    height: 160vw;
+    background-image: url("./../img/plate.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+  }
+
+  .bg3__container {
+    width: 100%;
+    height: 90vw;
+  }
+
+  .bg4__container {
+    width: 100%;
+    height: 150vw;
+    z-index: -10;
+  }
+  .div__wood1 {
+    width: 100%;
+    height: 5vw;
+    top: 298vw;
+  }
+  .div__wood2 {
+    width: 100%;
+    height: 5vw;
+    top: 388vw;
+  }
+  .plate__trailer {
+    width: 95%;
+    height: 76vw;
+  }
+  .txt__trailer {
+    width: 50%;
+    height: 20vw;
+    top: 300vw;
+    left: 25vw;
+  }
+  .bg4__container {
+    width: 100%;
+    height: 90vw;
+    background-image: url("./../img/bg2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .txt__rm {
+    width: 100%;
+    top: 384vw;
+    z-index: 10;
+  }
+  .folha_esq {
+    width: 20%;
+    top: 382vw;
+    z-index: 10;
+  }
+  .folha_dir {
+    width: 20%;
+    top: 288vw;
+    left: 80vw;
+    z-index: 10;
+  }
+
+  .roadmap {
+    width: 100%;
+    height: 60vw;
+    background-image: url("./../img/txtRoadmap.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    position: absolute;
+    top: 400vw;
+    z-index: 10;
+  }
+}
